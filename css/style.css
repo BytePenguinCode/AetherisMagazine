@@ -44,7 +44,7 @@
     }
 }
 
-.header {
+.header, .footer {
     display: flex;
     justify-content: space-between;
     padding: 16px;
@@ -58,11 +58,11 @@
     gap: 2rem;
 }
 
-.header-right {
+.header-right, #footer-right {
     margin-right: 24px;
 }
 
-.header-left {
+.header-left, #footer-left{
     margin-left: 24px;
 }
 
@@ -184,14 +184,6 @@
 
 .article-img:hover {
     transform: scale(1.05);
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    padding: 12px;
-    margin: 0;
-    /* background-color: antiquewhite; */
 }
 
 .logo {
