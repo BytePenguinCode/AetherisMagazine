@@ -30,6 +30,36 @@ window.onmousemove = e => {
 
     track.dataset.percentage = nextPercentage
 
+    animateTrack(nextPercentage)
+    // track.style.transform = `translateX(${nextPercentage + 50}%)`;
+
+    // track.animate({
+    //     transform: `translateX(${nextPercentage + 50}%)`},
+    // {
+    //     duration: 1300, fill: "forwards"});
+
+    // for(const image of track.getElementsByClassName("article-img")) {
+    //     image.animate({
+    //             objectPosition: `${100 + nextPercentage}% center`
+    //     }, { duration: 1300, fill: "forwards"});
+    // }
+}
+
+
+window.addEventListener("wheel", e => {
+    const delta = e.deltaY * 0.2; // Adjust sensitivity
+    const prevPercentage = parseFloat(track.dataset.percentage) || 0;
+    
+    const nextPercentageUnconstrained = prevPercentage - delta;
+    const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, -9), -91);
+    
+    track.dataset.percentage = nextPercentage;
+    
+    animateTrack(nextPercentage);
+});
+
+
+function animateTrack(nextPercentage) {
     track.style.transform = `translateX(${nextPercentage + 50}%)`;
 
     track.animate({
