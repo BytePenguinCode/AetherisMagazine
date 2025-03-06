@@ -84,11 +84,23 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 12px;
+
+}
+
+.about-bg {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    /* height: 50vh; */
+    align-items: center;
+    margin-top: 48px;
+    border-radius: 3%;
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    padding: 48px;
 }
 
 .about-desc {
-    width: 45vw;
-    height: 40vh;
     text-align: center;
 }
 
