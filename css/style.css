@@ -1,0 +1,199 @@
+@import url('https://fonts.cdnfonts.com/css/hertical-sans');    
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+* {
+    -webkit-user-drag: none; /* Prevent dragging in Safari */
+    user-select: none; /* Prevent text selection */
+  }
+  
+
+.landing {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/wmremove-transformed.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+
+.team-body, .about-body {
+    height: 100vh;
+    margin: 0;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/wmremove-transformed.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .header, .footer {
+        background: rgba(0,0,0,0.1);
+        -webkit-backdrop-filter: saturate(180%) blur(1px);
+        backdrop-filter: saturate(180%) blur(1px);
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 0;
+    /* background-color: antiquewhite; */
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-right {
+    margin-right: 24px;
+}
+
+.header-left {
+    margin-left: 24px;
+}
+
+
+.index-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-desc {
+    width: 45vw;
+    height: 40vh;
+    text-align: center;
+}
+
+.about-desc p {
+    font-size: 20px; 
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.team-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    width: 300px;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 5%;
+    background-color: #F8EDEBB3;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.personal-info > * {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+#articles {
+    display: flex;
+    gap: 3vmin;
+    position: relative;
+    /* left: 50%; */
+    transform: translateX(41%);
+    margin-bottom: 50px;
+}
+
+.article-img {
+    width: 30vmin;
+    height: 50vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
+    pointer-events: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    margin: 0;
+    /* background-color: antiquewhite; */
+}
+
+.logo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.pfp {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.heading-text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.body-font { /* cormorant-garamond-text */
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.subheading-font {
+    font-family: 'Hertical Sans', sans-serif;
+}
