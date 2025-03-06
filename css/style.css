@@ -163,14 +163,13 @@
     margin: 0;
 }
 
-
 #articles {
     display: flex;
     gap: 3vmin;
     position: relative;
     /* left: 50%; */
     transform: translateX(41%);
-    margin: 15px 0px;
+    margin-bottom: 15px;
 }
 
 .article-img {
@@ -178,8 +177,13 @@
     height: 60vmin;
     object-fit: cover;
     object-position: 100% 50%;
-    pointer-events: none;
-    border-radius: 10px
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.s ease-in-out;
+}
+
+.article-img:hover {
+    transform: scale(1.05);
 }
 
 .footer {
