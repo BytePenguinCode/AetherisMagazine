@@ -5,8 +5,7 @@
 * {
     -webkit-user-drag: none; /* Prevent dragging in Safari */
     user-select: none; /* Prevent text selection */
-  }
-  
+}
 
 .landing {
     height: 100vh;
@@ -39,7 +38,7 @@
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .header, .footer {
-        background: rgba(0,0,0,0.1);
+        background: rgba(0,0,0,0.5);
         -webkit-backdrop-filter: saturate(180%) blur(1px);
         backdrop-filter: saturate(180%) blur(1px);
     }
@@ -66,7 +65,6 @@
 .header-left {
     margin-left: 24px;
 }
-
 
 .index-content {
     flex: 1;
@@ -163,11 +161,12 @@
 }
 
 .article-img {
-    width: 30vmin;
+    width: 30.9vmin;
     height: 50vmin;
     object-fit: cover;
     object-position: 100% 50%;
     pointer-events: none;
+    border-radius: 10px
 }
 
 .footer {
@@ -189,14 +188,19 @@
 }
 
 .heading-text {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
+}
+
+.link-text {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 a {
     text-decoration: none;
     font-weight: 500;
-    color: black;
+    color: white;
 }
 
 .body-font { /* cormorant-garamond-text */
@@ -204,7 +208,7 @@ a {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-  }
+}
 
 .subheading-font {
     font-family: 'Hertical Sans', sans-serif;

@@ -1,50 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.cdnfonts.com/css/hertical-sans" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <title>Home</title>
-</head>
-<body class="landing">
-    <div class="header">
-        <div class="header-left">
-            <img src="/images/aetherislogo.png" alt="aetherislogo" class="logo">
-            <a href="#" class="body-font heading-text">Aetheris Magazine</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.cdnfonts.com/css/hertical-sans"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+            rel="stylesheet"
+        />
+        <title>Home</title>
+    </head>
+    <body class="landing">
+        <div class="header">
+            <div class="header-left">
+                <img
+                    src="/images/aetherislogo.png"
+                    alt="aetherislogo"
+                    class="logo"
+                />
+                <a href="#" class="body-font heading-text">Aetheris Magazine</a>
+            </div>
+            <div class="header-right">
+                <a
+                    class="body-font link-text"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeBm12jeDPCyZxklLzbD-Yagou88_50YuDxbu1jv9CeEUg6Eg/viewform"
+                    target="_blank"
+                    >Submit your articles</a
+                >
+                <a
+                    class="body-font link-text"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfeCY4cFw9EpOaNKxndIM4cydUveu2J5PoXOHhBvVOEKzWfAg/viewform"
+                    target="_blank"
+                    >Join us</a
+                >
+                <a class="body-font link-text" href="about.html">About</a>
+                <a class="body-font link-text" href="team.html">Team</a>
+            </div>
         </div>
-        <div class="header-right">
-            <a class="body-font heading-text" href="https://docs.google.com/forms/d/e/1FAIpQLSeBm12jeDPCyZxklLzbD-Yagou88_50YuDxbu1jv9CeEUg6Eg/viewform" target="_blank">Submit your articles</a>
-            <a class="body-font heading-text" href="https://docs.google.com/forms/d/e/1FAIpQLSfeCY4cFw9EpOaNKxndIM4cydUveu2J5PoXOHhBvVOEKzWfAg/viewform" target="_blank">Join us</a>
-            <a class="body-font heading-text" href="about.html">About</a>
-            <a class="body-font heading-text" href="team.html">Team</a>
+        <div class="index-content">
+            <h1
+                class="body-font"
+                style="
+                    font-size: 60px;
+                    font-weight: 600;
+                    margin: 0;
+                    padding-bottom: 48px;
+                "
+            >
+                Articles
+            </h1>
+            <div id="articles" data-mouse-down-at="0" data-prev-percentage="0">
+                <img
+                    class="article-img"
+                    src="/images/photo-1735322122784-859d1445023d.avif"
+                    alt="path"
+                    draggable="false"
+                />
+
+                <img
+                    class="article-img"
+                    src="/images/photo-1470770841072-f978cf4d019e.avif"
+                    alt="sea"
+                    draggable="false"
+                />
+
+                <img
+                    class="article-img"
+                    src="/images/photo-1740027054303-446c30074e3e.avif"
+                    alt="flower"
+                    draggable="false"
+                />
+
+                <img
+                    class="article-img"
+                    src="/images/photo-1740560595023-15a496695e15.avif"
+                    alt="city"
+                    draggable="false"
+                />
+
+                <img
+                    class="article-img"
+                    src="/images/photo-1523712999610-f77fbcfc3843.avif"
+                    alt="trees"
+                    draggable="false"
+                />
+            </div>
         </div>
-    </div>
-    <div class="index-content">
-        <h1 class="body-font" style="font-size: 50px; margin: 0; padding-bottom: 48px;">Articles</h1>
-        <div id="articles" data-mouse-down-at="0" data-prev-percentage="0">
-
-            <img class="article-img" src="/images/photo-1735322122784-859d1445023d.avif" alt="path" draggable="false">
-
-            <img class="article-img" src="/images/photo-1470770841072-f978cf4d019e.avif" alt="sea" draggable="false">
-
-            <img class="article-img" src="/images/photo-1740027054303-446c30074e3e.avif" alt="flower" draggable="false">
-
-            <img class="article-img" src="/images/photo-1740560595023-15a496695e15.avif" alt="city" draggable="false">
-
-            <img class="article-img" src="/images/photo-1523712999610-f77fbcfc3843.avif" alt="trees" draggable="false">
-
+        <div class="footer">
+            <a class="body-font" href="#">Aetheris Magazine</a>
         </div>
-    </div>
-    <div class="footer">
-        <a class="body-font" href="#">Aetheris Magazine</a>
-    </div>
-    <script src="/js/script.js"></script>
-</body>
+        <script src="/js/script.js"></script>
+    </body>
 </html>
