@@ -82,19 +82,33 @@
     justify-content: center;
     flex-direction: column;
     gap: 12px;
-
 }
 
 .about-bg {
-    display: flex;
+    display: block;
     flex-direction: column;
-    width: 45vw;
-    /* height: 50vh; */
+    width: 75vw;
+    max-width: 640px;
+    height: fit-content;
     align-items: center;
     border-radius: 3%;
     background: rgb(211, 211, 211, 0.6);
     backdrop-filter: blur(2px);
-    padding: 48px;
+    padding: 2rem;
+}
+
+.about-idfk-man {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.about-idfk-man img {
+    display: block;
+    width: 100%;
+    align-self: center;
+    max-width: 320px;
 }
 
 .about-desc {
@@ -184,6 +198,18 @@
 .pfp {
     width: 100px;
     border-radius: 50%;
+}
+
+.transparent-logo {
+    width: 50vw;
+    max-width: 640px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.jesus {
+    width: 100%;
+    max-width: 400px;
 }
 
 .heading-text {
