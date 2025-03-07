@@ -9,3 +9,16 @@
         height: 100%; */
     }
 }
+
+
+@media (max-width: 768px) {
+    
+    .footer {
+        flex-direction: column; /* Stack items vertically */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-items: center;
+    }
+}
