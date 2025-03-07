@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
-
     /* Disable scrolling */
-    html, body {
+    html,
+    body {
         overflow: hidden;
         margin: 0;
         padding: 0;
