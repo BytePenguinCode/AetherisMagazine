@@ -13,7 +13,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    background-image: url("/images/wmremove-transformed.jpeg");
+    background-image: url("/images/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -27,7 +27,7 @@
     /* overflow: hidden; */
     display: flex;
     flex-direction: column;
-    background-image: url("/images/wmremove-transformed.jpeg");
+    background-image: url("/images/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
