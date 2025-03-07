@@ -103,7 +103,7 @@
         justify-content: center;
         text-align: center;
     }
-    html, body {
+    .no-scroll {
         overflow: hidden;
         margin: 0;
         padding: 0;
