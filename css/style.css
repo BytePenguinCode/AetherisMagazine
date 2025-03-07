@@ -142,8 +142,6 @@
         max-width: 640px;
         margin-top: 30px;
         margin-bottom: 30px;
-        margin-top: 5px;
-        margin-bottom: 5px;
     }
     .footer {
         flex-direction: column; /* Stack items vertically */
