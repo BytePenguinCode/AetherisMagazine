@@ -147,6 +147,7 @@
     .articles-logo,
     .transparent-logo {
         width: 80vw;
+        height: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
