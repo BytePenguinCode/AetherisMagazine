@@ -104,7 +104,7 @@
         top: 16px;
         color: #f8edeb;
     }
-    .header{
+    .header {
         flex-direction: column; /* Stack items vertically */
         gap: 0px;
         justify-items: center;
