@@ -87,6 +87,13 @@
     margin-left: 24px;
 }
 
+.articles-logo {
+    height: 30vh;
+    max-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
