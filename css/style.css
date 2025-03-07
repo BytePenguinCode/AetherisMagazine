@@ -80,7 +80,6 @@
         gap: 1rem; /* Reduce gap for better spacing */
     }
     .header-right {
-        
         flex-direction: column; /* Stack items vertically */
         align-items: flex-start; /* Align to the left */
         gap: 1rem; /* Reduce gap for better spacing */
@@ -90,6 +89,26 @@
     .articles-logo {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .footer {
+        flex-direction: column; /* Stack items vertically */
+    }
+    #footer-left {
+        margin-left: 0px;
+        justify-content: center;
+        text-align: center;
+    }
+    #footer-right {
+        margin-right: 0px;
+        justify-content: center;
+        text-align: center;
+    }
+    html, body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
