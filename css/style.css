@@ -44,7 +44,7 @@
     }
 }
 
-.header, .footer {
+.header{
     display: flex;
     justify-content: space-between;
     padding: 16px;
@@ -55,12 +55,10 @@
 .header-left {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin-left: 24px;
 }
 
-#footer-right {
-    margin-right: 24px;
-}
 
 .header-right {
     display: flex;
@@ -72,19 +70,50 @@
     flex-direction: row;
 }
 
-/* Mobile layout (column for mobile menu) */
+/* Menu Button - Hidden by Default (Shown in Mobile) */
+.menu-toggle {
+    display: none; /* Hidden on desktop */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Show Menu Button on Mobile */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        color: #F8EDEB;
+    }
     .header {
         flex-direction: column; /* Stack items vertically */
-        align-items: start; /* Align to the left */
-        gap: 1rem; /* Reduce gap for better spacing */
+        gap: 0px;
+        justify-items: center;
     }
+
     .header-right {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align to the left */
-        gap: 1rem; /* Reduce gap for better spacing */
-        margin-right:0px;
-        margin-left:15px;
+        margin:0;
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .header-right.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .header-left {
+        justify-self: center;
+        align-items: left; /* Align to the left */
+        padding: 0px;
+        margin-left:20px;
+        margin-bottom: 0px;
     }
     .articles-logo {
         margin-top: 20px;
@@ -106,9 +135,24 @@
 }
 
 
-.header-left, #footer-left{
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 0;
+    /* background-color: antiquewhite; */
+}
+
+
+#footer-right {
+    margin-right: 24px;
+}
+
+
+#footer-left{
     margin-left: 24px;
 }
+
 
 .index-content {
     flex: 1;

@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <link rel="icon" href="/images/aetherislogo.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,15 +27,19 @@
     <body class="landing">
         <div class="header">
             <div class="header-left">
-                <a href="#" class="body-font heading-text">
+                <a href="index.html" class="body-font heading-text">
                     <img
                         src="/images/aetherislogo.png"
-                        alt="aetherislogo"
+                        alt="Aetheris Logo"
                         class="logo"
                     />
                 </a>
-                <a href="#" class="body-font heading-text">Aetheris Magazine</a>
+                <a href="index.html" class="body-font heading-text">Aetheris Magazine</a>
             </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
             <div class="header-right">
                 <a
                     class="body-font link-text"
@@ -52,6 +57,7 @@
                 <a class="body-font link-text" href="team.html">Team</a>
             </div>
         </div>
+
         <div class="index-content">
             <img src="images/articles.png" class="articles-logo" />
             <div id="articles" data-mouse-down-at="0" data-prev-percentage="0">
@@ -105,5 +111,6 @@
         </div>
         <script src="/js/script.js"></script>
         <script src="/js/enlargecard.js"></script>
+        <script src="/js/header.js"></script>
     </body>
 </html>

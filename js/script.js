@@ -1,14 +1,3 @@
-// List of pages where scrolling should be disabled
-const noScrollPages = ["/index.html"]; // Adjust based on your structure
-
-if (noScrollPages.includes(window.location.pathname)) {
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
-} else {
-    document.documentElement.style.overflow = "auto";
-    document.body.style.overflow = "auto";
-}
-
 const track = document.getElementById("articles");
 const headerHeight = document.querySelector(".header")?.offsetHeight || 0;
 const footerHeight = document.querySelector(".footer")?.offsetHeight || 0;

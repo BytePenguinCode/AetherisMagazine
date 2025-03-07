@@ -1,4 +1,23 @@
 document.querySelectorAll(".article-img").forEach((img) => {
+    let pressTimer;
+
+    // Long press starts
+    img.addEventListener("touchstart", (e) => {
+        pressTimer = setTimeout(() => {
+            img.style.transform = "scale(1.05)";
+        }, 500); // Adjust time for long press (500ms)
+    });
+
+    // Cancel long press if user moves or releases touch
+    img.addEventListener("touchend", () => {
+        clearTimeout(pressTimer);
+        img.style.transform = "scale(1)";
+    });
+
+    img.addEventListener("touchmove", () => {
+        clearTimeout(pressTimer);
+    });
+
     img.addEventListener("click", function () {
         this.style.transition =
             "transform 1.5s ease-in-out, opacity 1.5s ease-in-out, background-color 1.5s ease-in-out";
