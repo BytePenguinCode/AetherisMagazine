@@ -138,6 +138,10 @@
         margin-bottom: 0px;
     }
     .articles-logo {
+        width: 50vw;
+        max-width: 640px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
