@@ -138,8 +138,8 @@
         margin-bottom: 0px;
     }
     .articles-logo {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .footer {
         flex-direction: column; /* Stack items vertically */
