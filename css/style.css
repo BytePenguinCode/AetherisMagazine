@@ -94,6 +94,13 @@
     margin-bottom: 20px;
 }
 
+.transparent-logo {
+    width: 50vw;
+    max-width: 640px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -137,9 +144,9 @@
         margin-left: 20px;
         margin-bottom: 0px;
     }
-    .articles-logo, .transparent-logo{
+    .articles-logo,
+    .transparent-logo {
         width: 80vw;
-        max-width: 640px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -285,13 +292,6 @@
 .pfp {
     width: 100px;
     border-radius: 50%;
-}
-
-.transparent-logo {
-    width: 50vw;
-    max-width: 640px;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .jesus {
