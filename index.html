@@ -22,6 +22,20 @@
             href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
             rel="stylesheet"
         />
+        <script type="speculationrules">
+			{
+				"prerender": [
+					{
+						"source": "list",
+						"urls": ["../articles/grass.html",
+                                 "../articles/lake.html",
+                                 "../articles/sunset.html",
+                                 "../articles/trees.html",
+                                 "../articles/painting.html",]
+					}
+				]
+			}
+		</script>
         <title>Aetheris Magazine | Home</title>
     </head>
     <body class="landing">
@@ -56,46 +70,68 @@
                     >Join us</a
                 >
                 <a class="body-font link-text" href="about.html">About</a>
+
+                <a class="body-font link-text" href="team.html">Team</a>
             </div>
         </div>
 
         <div class="index-content">
             <img src="images/articles.png" class="articles-logo" />
             <div id="articles" data-mouse-down-at="0" data-prev-percentage="0">
-                <img
-                    class="article-img"
-                    src="/images/pexels-christian-heitz-285904-842711.jpg"
-                    alt="path"
-                    draggable="false"
-                />
+                <div class="article-card">
+                    <img
+                        style="view-transition-name: grass;"
+                        class="article-img"
+                        src="/images/pexels-christian-heitz-285904-842711.jpg"
+                        alt="grass"
+                        draggable="false"
+                    />
+                    <a href="articles/grass.html" class="article-link">Read More</a>
+                </div>
 
-                <img
-                    class="article-img"
-                    src="/images/pexels-eberhardgross-443446.jpg"
-                    alt="sea"
-                    draggable="false"
-                />
+                <div class="article-card">
+                    <img
+                        style="view-transition-name: lake;"
+                        class="article-img"
+                        src="/images/pexels-eberhardgross-443446.jpg"
+                        alt="lake"
+                        draggable="false"
+                    />
+                    <a href="articles/lake.html" class="article-link">Read More</a>
+                </div>
 
-                <img
-                    class="article-img"
-                    src="/images/pexels-no-name-14543-66997.jpg"
-                    alt="flower"
-                    draggable="false"
-                />
+                <div class="article-card">
+                    <img
+                        style="view-transition-name: sunset;"
+                        class="article-img"
+                        src="/images/pexels-no-name-14543-66997.jpg"
+                        alt="sunset"
+                        draggable="false"
+                    />
+                    <a href="articles/sunset.html" class="article-link">Read More</a>
+                </div>
 
-                <img
-                    class="article-img"
-                    src="/images/pexels-pixabay-33109.jpg"
-                    alt="city"
-                    draggable="false"
-                />
+                <div class="article-card">
+                    <img
+                        style="view-transition-name: trees;"
+                        class="article-img"
+                        src="/images/pexels-pixabay-33109.jpg"
+                        alt="trees"
+                        draggable="false"
+                    />
+                    <a href="articles/trees.html" class="article-link">Read More</a>
+                </div>
 
-                <img
-                    class="article-img"
-                    src="/images/pexels-steve-1266808.jpg"
-                    alt="trees"
-                    draggable="false"
-                />
+                <div class="article-card">
+                    <img
+                        style="view-transition-name: painting;"
+                        class="article-img"
+                        src="/images/pexels-steve-1266808.jpg"
+                        alt="painting"
+                        draggable="false"
+                    />
+                    <a href="articles/painting.html" class="article-link">Read More</a>
+                </div>
             </div>
         </div>
         <div class="footer">
