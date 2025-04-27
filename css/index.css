@@ -19,4 +19,8 @@
         right: 0;
         justify-items: center;
     }
+    .article-link {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
